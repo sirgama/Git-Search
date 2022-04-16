@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 .gitglobe{
   position: relative;
   border-radius: 500px;
@@ -13,7 +14,7 @@
   z-index: 2;
 }
 .hero {
-  height: 100vh;
+  height: 115vh;
   width: 100vw;
   /* background: url('../../../assets/hero-glow.svg');
   background-color: rgb(0, 0, 0); */
@@ -34,4 +35,7 @@ h1{
 .sect {
   height: 100vh;
   background-color: antiquewhite;
+}
+.stats {
+  font-family: 'PT Mono', monospace;
 }

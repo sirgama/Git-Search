@@ -6,6 +6,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HeroComponent } from './Components/hero/hero.component';
 import { UsersComponent } from './Component/users/users.component';
 import { RepositoriesComponent } from './Component/repositories/repositories.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RepositoriesComponent } from './Component/repositories/repositories.com
     RepositoriesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

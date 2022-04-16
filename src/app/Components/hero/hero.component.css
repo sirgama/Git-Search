@@ -31,3 +31,7 @@ h1{
   align-items: center;
   font-weight: bolder;
 }
+.sect {
+  height: 100vh;
+  background-color: antiquewhite;
+}

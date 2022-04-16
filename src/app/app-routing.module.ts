@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { HeroComponent } from './Components/hero/hero.component';
+import { UsersComponent } from './Component/users/users.component';
+import { RepositoriesComponent } from './Component/repositories/repositories.component';
 
-
+const routes: Routes = [
+  {path: 'hero', component: HeroComponent},
+  {path: 'users', component: UsersComponent},
+  {path: 'repository', component: RepositoriesComponent},
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

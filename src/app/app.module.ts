@@ -7,6 +7,7 @@ import { HeroComponent } from './Components/hero/hero.component';
 import { UsersComponent } from './Component/users/users.component';
 import { RepositoriesComponent } from './Component/repositories/repositories.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeuserComponent } from './Components/homeuser/homeuser.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
     NavbarComponent,
     HeroComponent,
     UsersComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    HomeuserComponent
   ],
   imports: [
     BrowserModule,

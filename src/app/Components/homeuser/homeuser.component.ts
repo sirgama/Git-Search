@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from 'src/app/Services/profile.service';
+import { Subscription } from 'rxjs';
+import { Users } from 'src/app/Classes/users';
 
 @Component({
   selector: 'app-homeuser',
@@ -6,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homeuser.component.css']
 })
 export class HomeuserComponent implements OnInit {
+  users: any;
+  subscription: any = new Subscription;
 
-  constructor() { }
+  constructor(private profileService:ProfileService) {
 
-  ngOnInit(): void {
   }
 
+  ngOnInit(): void{
+   
+
+  }
 }

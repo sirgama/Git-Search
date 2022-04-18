@@ -8,6 +8,7 @@ import { UsersComponent } from './Component/users/users.component';
 import { RepositoriesComponent } from './Component/repositories/repositories.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeuserComponent } from './Components/homeuser/homeuser.component';
+import { UserService } from './Services/user.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { HomeuserComponent } from './Components/homeuser/homeuser.component';
     AppRoutingModule,
     HttpClientModule ,
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

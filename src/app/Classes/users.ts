@@ -1,7 +1,4 @@
 export class Users {
-  login!: string;
-
-  // constructor(public login: string, public html_url: string, public avatar_url:string, public name:string, public bio:string, public followers:number, public following:number){
-
-  // }
+  constructor(public name:string, public login: string, public avatar_url:string, public html_url: string,public followers:number ,public following:number){
+  }
 }

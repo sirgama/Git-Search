@@ -14,7 +14,7 @@ export class UsersComponent implements OnInit {
   user!: Users;
   repo!: Repositories;
 
-  findUser(username: any){
+  findUser(username: string){
     this.gitUser = '';
     this.searchItem = username;
     this.ngOnInit();

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HeroComponent } from './Components/hero/hero.component';
@@ -20,7 +20,8 @@ import { HomeuserComponent } from './Components/homeuser/homeuser.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule ,
   ],
   providers: [],
   bootstrap: [AppComponent]

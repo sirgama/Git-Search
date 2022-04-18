@@ -78,7 +78,7 @@
           aria-expanded="false"
         >
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            src="{{user.avatar_url}}"
             class="rounded-circle"
             height="35"
             alt="Black and White Portrait of a Man"
@@ -90,13 +90,13 @@
           aria-labelledby="navbarDropdownMenuAvatar"
         >
           <li>
-            <a class="dropdown-item" href="#">Signed in as: </a><hr>
+            <a class="dropdown-item" href="#">Signed in as: {{user.name}}</a><hr>
           </li>
           <li>
-            <a class="dropdown-item" href="#">Your Profile</a>
+            <a class="dropdown-item" href="{{user.html_url}}">Your Profile</a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">Your Repositories</a>
+            <a class="dropdown-item" href="{{repo.html_url}}">Your Repositories</a>
           </li>
           <li>
             <a class="dropdown-item" href="#">Your Codespaces</a>

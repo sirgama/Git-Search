@@ -9,12 +9,13 @@ import { Users } from 'src/app/Classes/users';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
- public searchItem = 'sirgama';
- public gitUser!: string;
+  searchItem = 'sirgama';
+  gitUser!: string;
+  repoSearch!:string;
   user!: Users;
   repo!: Repositories;
 
-  findUser(username: string){
+  findUser(username: any){
     this.gitUser = '';
     this.searchItem = username;
     this.ngOnInit();

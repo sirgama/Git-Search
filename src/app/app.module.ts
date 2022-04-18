@@ -9,6 +9,7 @@ import { RepositoriesComponent } from './Component/repositories/repositories.com
 import { AppRoutingModule } from './app-routing.module';
 import { HomeuserComponent } from './Components/homeuser/homeuser.component';
 import { UserService } from './Services/user.service';
+import { SearchBoxComponent } from './Components/search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserService } from './Services/user.service';
     HeroComponent,
     UsersComponent,
     RepositoriesComponent,
-    HomeuserComponent
+    HomeuserComponent,
+    SearchBoxComponent
   ],
   imports: [
     BrowserModule,

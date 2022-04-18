@@ -8,7 +8,7 @@
   <div class="row ">
   <div class="col-md-6 card card1 align-items-center m-2" >
     <div class="row">
-      <img class="img-fluid userlogo" [src]="" alt="">
+      <img class="img-fluid userlogo" src="{{user.avatar_url}}" >
     </div>
     <div class="row card2 ">
       <h2 class="mt-4 text-center">{{user.name}} </h2>
@@ -16,7 +16,7 @@
       <h4 class="text-center"></h4>
     </div>
     <div class="row mt-4">
-      <a href="https://github.com/sirgama"><button class="btn btn-success"> View User</button></a>    </div>
+      <a href="{{user.html_url}}"><button class="btn btn-success"> View User</button></a>    </div>
     <div class="row card2 mt-3">
       <div class="col-md-6 text-center"><h6>{{user.followers}} Followers</h6></div>
       <div class="col-md-6 text-center"> <h6>{{user.following}} Following</h6></div>
@@ -24,11 +24,11 @@
   </div>
   <div class="col-md-6 card card3 m-2">
     <ul>
-      <li>
+      <li  *ngFor="let repo of gitRepos.newRepo">
     <div class="row">
-      <h2 class="text-center">Giphy-Clone</h2>
-      <h5 class="text-center">Giphy clone site written using Angular and Giphy's API.Leave a star:)</h5>
-      <a href="https://github.com/sirgama/Giphy-Clone"><button class="btn btn-success"> View Repo</button></a>
+      <h2 class="text-center">{{repo.name}}</h2>
+      <h5 class="text-center">{{repo.name}}</h5>
+      <a href="{{repo}}"><button class="btn btn-success"> View Repo</button></a>
     </div>
     </li>
     </ul>

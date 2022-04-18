@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeuserComponent } from './Components/homeuser/homeuser.component';
 import { UserService } from './Services/user.service';
 import { SearchBoxComponent } from './Components/search-box/search-box.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SearchBoxComponent } from './Components/search-box/search-box.component
     BrowserModule,
     AppRoutingModule,
     HttpClientModule ,
+    FormsModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

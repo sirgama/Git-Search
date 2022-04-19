@@ -34,7 +34,7 @@ export class UserService {
     }
 
     let promise = new Promise<void>((resolve, reject)=>{
-      this.http.get<ApiResponse>(`https://api.github.com/users/`+ searchItem + `?client_id=` + environment.clientId).toPromise()
+      this.http.get<ApiResponse>(`https://api.github.com/users/`+ searchItem + `?client_id=` + environment.gitToken ).toPromise()
       .then((feedback:any)  =>{
         this.user.name = feedback.name;
         this.user.avatar_url = feedback.avatar_url;

@@ -26,7 +26,12 @@
     <div class="row">
       <h2 class="text-center">{{repo.name}}</h2>
       <p class="text-center">{{repo.description}}</p>
-      <a href=""><button class="btn btn-success"> View Repo</button></a>
+      <p class="text-center">{{repo.date}}</p>
+      <div class="row card2 mt-3">
+        <div class="col text-center"><h6>Branch: {{repo.default_branch}}</h6></div>
+        <div class="col text-center"> <h6>Last update: {{repo.updated_at}}</h6></div>
+      </div>
+      <a href="{{repo.html_url}}"><button class="btn btn-success"> View Repo</button></a>
     </div>
     </li>
     </ul>

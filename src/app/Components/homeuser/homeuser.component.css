@@ -1,6 +1,6 @@
 *{
   color: black;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
 .userlogo{
   height: 250px;
@@ -22,4 +22,6 @@
   border-radius: 20px;
   height: fit-content;
   list-style: none;
+  overflow: scroll;
+  height: 90vh;
 }

@@ -34,7 +34,7 @@ h1{
 }
 .sect {
   height: 100vh;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
 .stats {
   font-family: 'PT Mono', monospace;

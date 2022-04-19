@@ -66,7 +66,7 @@ export class UserService {
       html_url: string;
     }
     let repoPromise = new Promise<void>((resolve)=>{
-      this.http.get<ApiResponse>(`https://api.github.com/users/`+ searchItem+ `/repos?order=created&sort=asc?client_id=` + environment.gitToken).toPromise().then(getRepoResponse =>{
+      this.http.get<ApiResponse>(`https://api.github.com/users/`+ searchItem+ `/repos?order=created&sort=asc?client_id=` + environment.gitToken ).toPromise().then(getRepoResponse =>{
         this.newRepo = getRepoResponse;
         console.log(this.newRepo)
       resolve();

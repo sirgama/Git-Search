@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  clientId: '5a9d03c5494c6c1040d7',
+  clientId: 'c751388076e65df5febd',
   gitToken: "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",
-  clientSecret: '91fc956d9fa4b721478230a16b044e904c48495c'
+  clientSecret: 'f967dd0625b18de6e23accb946e28efaf95a3742'
 };
 
 /*

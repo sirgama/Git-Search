@@ -36,7 +36,7 @@
           <a class="nav-link text-white" routerLink="/users" routerLinkActive='active'>Users</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" routerLink="/repository" routerLinkActive='active'>Repositories</a>
+          <a class="nav-link text-white" routerLink="/repository" routerLinkActive='active'></a>
         </li>
       </ul>
       <!-- Left links -->
@@ -90,7 +90,7 @@
           aria-labelledby="navbarDropdownMenuAvatar"
         >
           <li>
-            <a class="dropdown-item" href="#">Signed in as: {{user.name}}</a><hr>
+            <a class="dropdown-item" href="#">Signed in as: {{user.login}}</a><hr>
           </li>
           <li>
             <a class="dropdown-item" href="{{user.html_url}}">Your Profile</a>

@@ -9,7 +9,7 @@ import { Users } from 'src/app/Classes/users';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  searchItem = 'sirgama';
+  searchItem = '';
   gitUser!: string;
   repoSearch!:string;
   user!: Users;

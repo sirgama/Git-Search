@@ -1,6 +1,24 @@
-<form (ngSubmit)="searching(searchBox)" #searchBox="ngForm">
-  <div class="form-group">
-    <input type="text" class="form-control" name="find" placeholder="Enter Github username" [(ngModel)]= "searchInfo.find"  #find='ngModel'>
-    <button type="submit" class="btn btn-group"> Find User</button>
+<div class="container-fluid">
+<div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('../../../assets/pexels-danny-meneses-943096.jpg');
+      height: 400px;
+      width: 100vw;
+    "
+  >
+    <div class="" style="background-color: rgba(0, 0, 0, 0.9);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="" style="background: black;">
+          <form (ngSubmit)="searching(searchBox)" #searchBox="ngForm">
+            <div class="form-group">
+              <input type="text" class="form-control" name="find" placeholder="Enter Github username" [(ngModel)]= "searchInfo.find"  #find='ngModel'>
+              <button type="submit" class="btn btn-success"> Find User</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
   </div>
-</form>
+</div>

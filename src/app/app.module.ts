@@ -13,6 +13,7 @@ import { SearchBoxComponent } from './Components/search-box/search-box.component
 import { FormsModule } from '@angular/forms';
 import { DatepipePipe } from './datepipe.pipe';
 import { SelectDirective } from './select.directive';
+import { FooterComponent } from './Components/footer/footer.component';
 
 
 
@@ -27,6 +28,7 @@ import { SelectDirective } from './select.directive';
     SearchBoxComponent,
     DatepipePipe,
     SelectDirective,
+    FooterComponent,
 
 
   ],

@@ -1,6 +1,6 @@
 *{
-  color: black;
-  background-color: rgb(255, 255, 255);
+  color: rgb(2, 0, 95);
+  background-color: rgba(255,255, 255, 0.5);
 }
 .userlogo{
   height: 250px;
@@ -11,7 +11,6 @@
 .card1{
   width: 30vw;
   border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 }
 .card2{
@@ -25,10 +24,26 @@
   overflow: scroll;
   height: 90vh;
 
+
+}
+.card4{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255,255, 255, 0.5);
+  border-left: 1px solid rgba(255,255, 255, 0.5);
+  border-radius:15px;
+  backdrop-filter:blur(5px) ;
+  background:rgba(255,255, 255, 0.1);
+  overflow: hidden;
+  box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+  margin:30px;
 }
 
 .card4:hover{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: translateY(0px);
+  opacity:1;
 }
 .hht{
   margin-left: 10px;
@@ -38,4 +53,7 @@ ul{
 }
 .btn {
   background-color: #00b849;
+}
+h1, h2, h3{
+  font-weight: bold;
 }

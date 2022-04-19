@@ -10,7 +10,7 @@
       <h4 class="text-center"></h4>
     </div>
     <div class="row mt-4">
-      <a href="{{user.html_url}}"><button class="btn btn-success"> View User</button></a>    </div>
+      <a href="{{user.html_url}}"><button class="btn btn-success">Git Profile</button></a>    </div>
     <div class="row card2 mt-3">
       <div class="col-md-6 text-center"><h6>{{user.followers}} Followers</h6></div>
       <div class="col-md-6 text-center"> <h6>{{user.following}} Following</h6></div>
@@ -20,12 +20,12 @@
     <ul *ngFor='let repo of gitRepos.newRepo'  >
       <li>
     <div class="row card card4 mt-4 ">
-      <h2 class="text-center">{{repo.name}}</h2>
+      <h2 class="text-center text-bold m-3"><u>{{repo.name}}</u></h2>
       <p class="text-center">{{repo.description}}</p>
       <p class="text-center"> Language: {{repo.language}}</p>
       <h6 class="text-center"> Last update: {{repo.updated_at|date}}</h6>
 
-      <a href="{{repo.html_url}}"><button class="btn btn-success"> View Repo</button></a>
+      <a href="{{repo.html_url}}"><button class="btn btn-success justify-content-center m-2"> View Repository</button></a>
     </div>
     </li>
     </ul>

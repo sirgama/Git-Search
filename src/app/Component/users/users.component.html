@@ -21,15 +21,16 @@
     </div>
   </div>
   <div class="col-md-6 card card3 m-2">
-    <ul>
-      <li  *ngFor="let repo of gitRepos.newRepo">
+    <ul *ngFor='let repo of gitRepos.newRepo'  >
+      <li>
     <div class="row">
       <h2 class="text-center">{{repo.name}}</h2>
-      <h5 class="text-center">{{repo.name}}</h5>
-      <a href="{{repo}}"><button class="btn btn-success"> View Repo</button></a>
+      <p class="text-center">{{repo.description}}</p>
+      <a href=""><button class="btn btn-success"> View Repo</button></a>
     </div>
     </li>
     </ul>
   </div>
   </div>
 </div>
+

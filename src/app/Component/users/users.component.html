@@ -24,7 +24,7 @@
     <ul *ngFor='let repo of gitRepos.newRepo'  >
       <li>
     <div class="row card card4 mt-4 ">
-      <h2 class="text-center">{{repo.name}}</h2>
+      <h2 class="text-center"><u>{{repo.name}}</u></h2>
       <p class="text-center">{{repo.description}}</p>
       <p class="text-center"> Language: {{repo.language}}</p>
       <h6 class="text-center"> Last update: {{repo.updated_at|date}}</h6>
